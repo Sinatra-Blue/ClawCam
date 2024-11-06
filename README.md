@@ -1,2 +1,2 @@
-# Bangor-University-Lobsters-Crabs
+# ClawCam
 # Fill in SOPH
