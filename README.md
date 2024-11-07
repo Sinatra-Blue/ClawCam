@@ -11,11 +11,11 @@
 
 | Chapter | Description 
 |-----------------|-----------------|
-| Introduction    | This page is for users who are just considering the use of AI in their workflow, and aren't even sure yet whether ClawCam would be useful. It summarises what we do with the model, how it can help you and how other people use it.    | 
-| Key Features | How the software will be useful
-| How to guide   | How to download and run ClawCam on your data. Jump to it if you're already familiar with ClawCam and you have data it can analyse.   |  
-| Project Status | The lastest news on development and training
-| Future Work | Next steps for ClawCam
+| [Introduction](#introduction-to-clawcam)   | Gives an overview of what **ClawCam** is all about, including its goals and the benefits it brings to users considering adding AI to their workflow.    | 
+| [Key Features](#key-features) | How the software will be useful. |
+| [How ClawCam Works](how-does-clawcam-work?)   | Breaks down how **ClawCam** operates, with an overview of the pipeline and the processes involved. This section helps you understand the different steps taken when analyzing video footage and how the software pieces everything together.   |  
+| [Project Status](project-status) | The lastest news on development and training.
+| [Future Work](future-work) | Next steps for **ClawCam**.
 
 # Introduction to ClawCam
 
@@ -32,6 +32,10 @@ Information on the size and sex of crabs and lobsters is crucial for effective f
 - 🦞🦀 **Species Identification**: Distinguish between Brown Crab & European Lobster
 - 📏 **Detailed Measurements**: Obtain data on total length, carapce dimensions, and abdomen width
 - 🧡 **Sex Classification**: Detect and record sex, crucial for reproductive health assessments
+
+## How Does ClawCam Work?
+
+Preprocessing, Development, Deployment, Postprocessing
 
 ## Project Status
 
