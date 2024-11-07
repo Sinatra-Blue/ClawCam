@@ -1,6 +1,6 @@
 # ClawCam
 
-**ClaweCam** is an advanced software tool in development that detects brown crab (_Cancer pagurus_) and European lobster (_Homarus gammarus_) in video footage, providing automated insights into: 
+**ClawCam** is an advanced software tool in development that detects brown crab (_Cancer pagurus_) and European lobster (_Homarus gammarus_) in video footage, providing automated insights into: 
 - Species Indentification 🦞🦀
 - Sex determination
 - Total Length 
@@ -28,10 +28,10 @@ Information on the size and sex of crabs and lobsters is crucial for effective f
 
 ## Key Features
 
-- **Automated Detection**: Identify crabs and lobsters from video footage with minimal manual input
-- **Species Identification**: Distinguish between Brown Crab & European Lobster
-- **Detailed Measurements**: Obtain data on total length, carapce dimensions, and abdomen width
-- **Sex Classification**: Detect and record sex, crucial for reproductive health assessments
+- 👀 **Automated Detection**: Identify crabs and lobsters from video footage with minimal manual input
+- 🦞🦀 **Species Identification**: Distinguish between Brown Crab & European Lobster
+- 📏 **Detailed Measurements**: Obtain data on total length, carapce dimensions, and abdomen width
+- 🧡 **Sex Classification**: Detect and record sex, crucial for reproductive health assessments
 
 ## Project Status
 
