@@ -56,6 +56,11 @@ The **ClawCam** development pipeline follows a structured process to handle and 
 - Model Evaluation: The predicted outputs from the model are compared to the actual ground truth information using an error function.
 - Error Calculation: The error function calculates the difference between the predicted data and the actual, ground truth data, determining how far off the model's predictions are.
 10. _Iterative Training Loop_: The model uses the calculated error to adjust its parameters, aiming to minimise this difference. The corrected parameters are then used in the next round of training, and the cycle continues, gradually improving the model's accuracy.
+
+![Resize image project](https://github.com/user-attachments/assets/542c5265-00e7-4c22-b872-87473c2cc2c8) ![Resize image project (2)](https://github.com/user-attachments/assets/b9890a80-ed46-4f59-93a9-9fc04210f439)
+
+                    Good Frame                                                          Bad Frame
+
   
 ### Deployment
 ![deployment 2 (3)](https://github.com/user-attachments/assets/3b7898e1-ebd6-426c-9ed6-d5e19dac0147)
