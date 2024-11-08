@@ -36,7 +36,8 @@ Information on the size and sex of crabs and lobsters is crucial for effective f
 ## How Does ClawCam Work?
 
 ### Development
-![development](https://github.com/user-attachments/assets/287c5377-8402-4dc8-8f8f-07f6287daf68)
+![development (2)](https://github.com/user-attachments/assets/ed694331-2ee5-4d46-94c2-96d2c8462d40)
+
 
 The **ClawCam** development pipeline follows a structured process to handle and analyse video footage from fisheries or processing centers. Here's how the pipeline works:
 
@@ -47,8 +48,7 @@ The **ClawCam** development pipeline follows a structured process to handle and 
 5.  _Data Integration_: Finally, the two Excel sheets — one containing the frame evaluations and the other containing the linked ground truth data — are combined. This integrated dataset forms a comprehensive resource that aids in training the model and validating its output.
 
 ### Deployment
-![deployment (1)](https://github.com/user-attachments/assets/f93e0b83-7851-4912-a377-73cda0da03f0)
-
+![deployment 2 (1)](https://github.com/user-attachments/assets/5755c30c-ff1a-4589-8aba-6349c06eb650)
 1. _Video Input_: Just like in the development stage, video footage is taken directly from fishermen or processing centers, acting as the source data for the pipeline.
 2. _Frame Extraction_: The incoming video is broken down into individual frames to make the data manageable for analysis.
 3. _Frame Evaluation_: Each frame is assessed to determine whether it is a 'good' or 'bad' frame. This evaluation is recorded in an Excel sheet to ensure transparency and easy tracking.
