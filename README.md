@@ -59,7 +59,7 @@ The **ClawCam** development pipeline follows a structured process to handle and 
 
 ![Resize image project](https://github.com/user-attachments/assets/542c5265-00e7-4c22-b872-87473c2cc2c8) ![Resize image project (2)](https://github.com/user-attachments/assets/b9890a80-ed46-4f59-93a9-9fc04210f439)
 
-                    Good Frame                                                          Bad Frame
+                      Good Frame                              |                      Bad Frame
 
   
 ### Deployment
