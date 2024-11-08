@@ -40,14 +40,24 @@ Information on the size and sex of crabs and lobsters is crucial for effective f
 
 The **ClawCam** development pipeline follows a structured process to handle and analyse video footage from fisheries or processing centers. Here's how the pipeline works:
 
-- _Video Input_: The process starts by receiving video footage directly from fishermen or processing centers. This footage serves as the raw data for analysis.
-- _Frame Extraction_: The video is processed to extract individual frames, preparing them for further analysis.
+1.  _Video Input_: The process starts by receiving video footage directly from fishermen or processing centers. This footage serves as the raw data for analysis.
+2.  _Frame Extraction_: The video is processed to extract individual frames, preparing them for further analysis.
 - _**Parallel Processes**_:
-- _Frame Evaluation_: Each extracted frame is analysed and classified as either a 'good' frame or a 'bad' frame based on quality and content. This information is logged into an Excel sheet for easy reference.
-- _Ground Truth Linking_: Simultaneously, individual lobsters in the frames are linked to ground truth data, such as measurement details, sex, and other relevant biological information. This ensures that each lobster detected in the footage is paired with accurate data for validation and training.
-- _Data Integration_: Finally, the two Excel sheets — one containing the frame evaluations and the other containing the linked ground truth dat a— are combined. This integrated dataset forms a comprehensive resource that aids in training the model and validating its output.
+3.  _Frame Evaluation_: Each extracted frame is analysed and classified as either a 'good' frame or a 'bad' frame based on quality and content. This information is logged into an Excel sheet for easy reference.
+4.  _Ground Truth Linking_: Simultaneously, individual lobsters in the frames are linked to ground truth data, such as measurement details, sex, and other relevant biological information. This ensures that each lobster detected in the footage is paired with accurate data for validation and training.
+5.  _Data Integration_: Finally, the two Excel sheets — one containing the frame evaluations and the other containing the linked ground truth data — are combined. This integrated dataset forms a comprehensive resource that aids in training the model and validating its output.
 
 ### Deployment
+![deployment (1)](https://github.com/user-attachments/assets/f93e0b83-7851-4912-a377-73cda0da03f0)
+
+1. _Video Input_: Just like in the development stage, video footage is taken directly from fishermen or processing centers, acting as the source data for the pipeline.
+2. _Frame Extraction_: The incoming video is broken down into individual frames to make the data manageable for analysis.
+- _**Parallel Processes**_:
+3. _Frame Evaluation_: Each frame is assessed to determine whether it is a 'good' or 'bad' frame. This evaluation is recorded in an Excel sheet to ensure transparency and easy tracking.
+4. _Lobster Detection_: Unlike the development stage, frames are now linked to detected lobsters without the need for ground truth data. This process focuses on identifying and assigning each lobster within the frame for analysis.
+5. _Excel Sheet Compilation_: The results from the frame evaluations and the lobster detection process are combined into a comprehensive Excel sheet. This sheet captures the frame quality and assigns lobsters accordingly.
+6. _Data Filtering_: The compiled sheet is filtered to isolate and retain only 'good' frames. This ensures that only high-quality, usable frames move forward in the pipeline.
+7. _Model Input_: The filtered set of good frames is then fed into the **ClawCam** model for further processing, enabling automated detection, measurement, and analysis of crabs and lobsters.
 
 ### Postprocessing
 
