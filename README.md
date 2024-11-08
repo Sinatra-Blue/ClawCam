@@ -1,7 +1,7 @@
 # ClawCam
 
 **ClawCam** is an advanced software tool in development that detects brown crab (_Cancer pagurus_) and European lobster (_Homarus gammarus_) in video footage, providing automated insights into: 
-- Species Indentification 🦞🦀
+- Species Identification 🦞🦀
 - Sex determination
 - Total Length 
 - Carapace Length & Width 
@@ -13,7 +13,7 @@
 |-----------------|-----------------|
 | [Introduction](#introduction-to-clawcam)   | Gives an overview of what **ClawCam** is all about, including its goals and the benefits it brings to users considering adding AI to their workflow.    | 
 | [Key Features](#key-features) | How the software will be useful. |
-| [How ClawCam Works](how-does-clawcam-work?)   | Breaks down how **ClawCam** operates, with an overview of the pipeline and the processes involved. This section helps you understand the different steps taken when analyzing video footage and how the software pieces everything together.   |  
+| [How ClawCam Works](how-does-clawcam-work?)   | Breaks down how **ClawCam** operates, with an overview of the pipeline and the processes involved. This section helps you understand the different steps taken when analysing video footage and how the software pieces everything together.   |  
 | [Project Status](project-status) | The lastest news on development and training.
 | [Future Work](future-work) | Next steps for **ClawCam**.
 
@@ -44,9 +44,9 @@ The **ClawCam** development pipeline follows a structured process to handle and 
 1.  _Video Input_: The process starts by receiving video footage directly from fishermen or processing centers. This footage serves as the raw data for analysis.
 2.  _Frame Extraction_: The video is processed to extract individual frames, preparing them for further analysis.
 3.  _Frame Selection_: Each extracted frame is analysed and classified as either a 'good' frame or a 'bad' frame based on quality and content. This information is logged into an Excel sheet for easy reference.
-4.  _Lobster Detection_: Individual lobsters are detected within each frame, and their locations are identified for further analysis
+4.  _Lobster Detection_: Individual lobsters are detected within each frame, and their locations are identified for further analysis.
 5.  _Ground Truth Linking_: Simultaneously, individual lobsters in the frames are linked to ground truth data, such as measurement details, sex, and other relevant biological information.
-6.  _Data Integration_: The two Excel sheets — one containing the frame evaluations and the other containing the linked ground truth data — are combined. This integrated dataset forms a comprehensive resource that aids in training the model and validating its output
+6.  _Data Integration_: The two Excel sheets — one containing the frame evaluations and the other containing the linked ground truth data — are combined. This integrated dataset forms a comprehensive resource that aids in training the model and validating its output.
 
 **Feeding The Model and Iterative Training**
 
@@ -55,15 +55,24 @@ The **ClawCam** development pipeline follows a structured process to handle and 
 9. _Error Function_:
 - Model Evaluation: The predicted outputs from the model are compared to the actual ground truth information using an error function.
 - Error Calculation: The error function calculates the difference between the predicted data and the actual, ground truth data, determining how far off the model's predictions are.
-10. _Iterative Training Loop_: The model uses the calculated error to adjust its parameters, aiming to minimize this difference. The corrected parameters are then used in the next round of training, and the cycle continues, gradually improving the model's accuracy.
+10. _Iterative Training Loop_: The model uses the calculated error to adjust its parameters, aiming to minimise this difference. The corrected parameters are then used in the next round of training, and the cycle continues, gradually improving the model's accuracy.
   
 ### Deployment
-![deployment 2 (1)](https://github.com/user-attachments/assets/5755c30c-ff1a-4589-8aba-6349c06eb650)
+![deployment 2 (3)](https://github.com/user-attachments/assets/3b7898e1-ebd6-426c-9ed6-d5e19dac0147)
 1. _Video Input_: Just like in the development stage, video footage is taken directly from fishermen or processing centers, acting as the source data for the pipeline.
 2. _Frame Extraction_: The incoming video is broken down into individual frames to make the data manageable for analysis.
 3. _Frame Evaluation_: Each frame is assessed to determine whether it is a 'good' or 'bad' frame. This evaluation is recorded in an Excel sheet to ensure transparency and easy tracking.
-4. _Lobster Detection_: Simultaneously, unlike the development stage, frames are now linked to detected lobsters without the need for ground truth data. This process focuses on identifying and assigning each lobster within the frame for analysis.
+4. _Lobster Detection_: At the same time, frames are processed to detect and identify individual lobsters. Unlike the development stage, this step does not require ground truth data but focuses purely on recognising and assigning lobsters for further analysis.
 5. _Excel Sheet Compilation_: The results from the frame evaluations and the lobster detection process are combined into a comprehensive Excel sheet. This sheet captures the frame quality and assigns lobsters accordingly.
+6. _Filter for Good Frames_: The compiled Excel sheet is filtered to include only the 'good' frames that contain identified lobsters. This step ensures that only high-quality frames are sent to the model for further analysis, maximising the reliability of the predictions.
+
+**Model Optimisation**
+
+7. _Feeding the Model_: The filtered set of good frames is fed into the **ClawCam** model for analysis. The model processes the frames to predict important details about the lobsters, such as species, measurements, and sex.
+8. _Model Prediction_ and _Post-Processing_:
+- Initial Prediction: The model generates predictions for each detected lobster based on the processed frames.
+- Post-Processing: The predicted information is then fed into a post-processing stage. Here, statistical modeling techniques are used to refine the results, ensuring that a single, consistent value is obtained for each piece of information per lobster. This helps eliminate inconsistencies that may arise from multiple frames, providing a more accurate overall prediction for each lobster.
+9. _Final Predicted Data_: After post-processing, the final predicted information is generated, ready for use in fisheries management and conservation efforts. The post-processing step may be repeated if necessary to further optimise and refine the predicted outputs.
 
 ### Postprocessing
 
