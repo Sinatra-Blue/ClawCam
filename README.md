@@ -90,6 +90,10 @@ The **ClawCam** development pipeline follows a structured process to handle and 
 
 _Updates on progress and milestones will be regularly added here_
 
+## Supplementary Materials
+[Camera Instructions.docx](https://github.com/user-attachments/files/17950489/Camera.Instructions.docx)
+
+
 ## Future Work
 
 Upcoming development plans include:
