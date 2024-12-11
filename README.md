@@ -93,6 +93,7 @@ _Updates on progress and milestones will be regularly added here_
 ## Supplementary Materials
 [Camera Instructions.docx](https://github.com/user-attachments/files/17950489/Camera.Instructions.docx)
 
+https://bangoroffice365.sharepoint.com/sites/SOS-FISPCameraTechnology/_layouts/15/stream.aspx?id=%2Fsites%2FSOS%2DFISPCameraTechnology%2FShared%20Documents%2FGeneral%2FReports%2FCamera%20instructional%20video%2Emov&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E0899f99d%2D4c95%2D47f7%2D9cf8%2Db5853e8876fe
 
 ## Future Work
 
